@@ -1,0 +1,44 @@
+/* =Widgets
+----------------------------------------------- */
+
+#secondary {
+	padding-left: 30px;
+}
+
+.widget {
+	margin: 0 0 $vspacing;
+	border-bottom: solid #dddfe3 2px;
+
+	&:last-of-type {
+		border-bottom: none;
+	}
+
+	/* Make sure select elements fit in widgets */
+	select {
+		max-width: 100%;
+	}
+
+}
+
+
+.widget-title {
+	font-size: 22px;
+	font-weight: $bold;
+	margin-bottom: 10px;
+}
+.widget {
+
+	ul {
+		list-style: none;
+		margin-left: 0;
+
+		li {
+			line-height: 1.8;
+		}
+	}
+
+	a {
+		color: $blue;
+	}
+
+}

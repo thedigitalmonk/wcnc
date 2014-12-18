@@ -1,0 +1,14 @@
+/* Biggest Screen */
+
+#content {
+	min-height: 800px;
+}
+
+@media (min-width: 991px) and (max-width: 1169px) {
+
+	.appendSection {
+		margin-top: -134px;
+		padding: 20px 30px;
+	}
+
+}

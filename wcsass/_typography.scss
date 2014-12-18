@@ -1,0 +1,178 @@
+//Type Scale: 5, 7, 9, 12, 16, 21, 28, 37, 50, 67, 83.
+
+
+body,
+button,
+input,
+select,
+textarea {
+	color: $text-color;
+	font-family: $base-font;
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+
+/* Headings */
+h1,h2,h3,h4,h5,h6 {
+	margin-top: 0;
+	font-family: $header-font;
+	clear: both;
+}
+
+h1 {
+	font-size: 37px;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 21px;
+	font-weight: $extra_bold;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-size: 21px;
+	margin-bottom: 15px;
+}
+
+h5 {
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: $bold;
+}
+
+.page-title {
+	font-size: 21px;
+	font-weight: $bold;
+	color: $green;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: $vspacing;
+}
+
+/* Text elements */
+p {
+	margin-bottom: $vspacing;
+}
+ul, ol {
+	margin: 0 0 $vspacing 3em;
+}
+ul {
+	list-style: disc;
+}
+ol {
+	list-style: decimal;
+}
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: $vspacing;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin: 0 $vspacing $vspacing;
+}
+b, strong {
+	font-weight: bold;
+}
+dfn, cite, em, i {
+	font-style: italic;
+}
+blockquote {
+	font-family: "Georgia", serif;
+	font-style: italic;
+	margin: 0 $vspacing;
+}
+
+.single blockquote {
+	font-size: 28px;
+	margin: $vspacing;
+
+	@media(max-width: 480px) {
+		font-size: 21px;
+	}
+}
+
+address {
+	margin: 0 0 $vspacing;
+}
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	padding: 1.6em;
+	overflow: auto;
+	max-width: 100%;
+}
+code, kbd, tt, var {
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+small {
+	font-size: 75%;
+}
+big {
+	font-size: 125%;
+}
+figure {
+	margin: 0;
+}
+table {
+	margin: 0 0 $vspacing;
+	width: 100%;
+}
+th {
+	font-weight: bold;
+}
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+/* Links */
+a {
+	color: $link-color;
+	@include hoverActiveFocus {
+		color: darken($link-color, 30%);
+		text-decoration: none;
+	}
+}
+a:visited {
+	color: $link-color;
+}

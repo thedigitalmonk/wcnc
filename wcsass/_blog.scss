@@ -1,0 +1,52 @@
+.blog, .archive {
+
+	#primary {
+		background: $body-background;
+		padding: 0;
+	}
+
+	article {
+		background: #fff;
+		margin-bottom: 30px;
+		padding: 30px;
+	}
+
+	iframe {
+		display: none;
+	}
+}
+
+.post-thumbnail {
+	margin-top: 1.5em;
+}
+
+.post-block {
+	margin-bottom: 30px;
+	background: #fff;
+	padding: 0;
+}
+
+.thumbnail-blog {
+	padding: 0;
+}
+
+.post-info {
+	padding: 30px 30px 10px 30px;
+
+	h4 a {
+		color: $grey;
+	}
+
+	h4, .author {
+		margin-bottom: 5px;
+	}
+}
+
+.posttype {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #ddd;
+}

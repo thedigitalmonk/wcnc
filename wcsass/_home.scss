@@ -1,0 +1,84 @@
+.bigbanner {
+
+	.title-wrap h3 {
+		background: $green-o;
+		color: #fff;
+		padding: 10px 30px 10px 60px;
+		position: absolute;
+		z-index: 2;
+		top: 30px;
+		left: 0;
+	}
+
+	a {
+		color: #fff;
+	}
+
+	h3 {
+		margin-bottom: 0;
+	}
+
+	.info {
+		padding-left: 10px;
+	}
+}
+
+.bigimage {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.appendSection {
+	margin-top: -135px;
+	background: rgba(13, 172, 40, 0.5);
+	padding: 20px 60px 20px 60px;
+}
+
+.event-block {
+	padding: 1px;
+	background: #fff;
+	box-shadow: 0 0 1px gray inset;
+	margin-bottom: 20px;
+}
+
+.magazine-block {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.thumbnail-preview, .widget-horizontal {
+	padding: 0;
+}
+
+.widget-horizontal {
+	margin-top: 30px;
+}
+
+.fp-widget {
+
+	h4 {
+		margin-bottom: 0;
+
+		a {
+			color: $grey;
+		}
+	}
+}
+
+.events-widget, .photos-widget {
+	padding-left: 0;
+
+	a {
+		color: $grey;
+	}
+
+	.info {
+		padding: 10px;
+	}
+
+	h4 {
+		margin-bottom: 0;
+	}
+
+}
+

@@ -1,0 +1,102 @@
+/* =Global
+----------------------------------------------- */
+
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: $vspacing;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: $vspacing;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/* Clearing */
+.clear,
+.entry-content,
+.comment-content,
+.site-header,
+.site-content,
+.site-footer {
+	@extend %clearfix;
+}
+
+body {
+	background: $body-background;
+}
+
+/* Content Styling */
+.site-content {
+	padding-top: 80px;
+	padding-bottom: 30px;
+}
+
+
+#primary {
+	background: #fff;
+	padding: 30px;
+}
+
+/* Footer Styling */
+
+.site-footer {
+	background: $dark-green;
+	padding: 10px 0;
+	color: #fff;
+	padding-left: 0;
+	padding-right: 0;
+
+	a{
+		color: #fff;
+
+		&:hover, &:visited {
+			color: #eee;
+			text-decoration: none;
+		}
+	}
+}
+
+.site-info, #mc_embed_signup {
+	padding-left: 0;
+}
+
+.site-credits {
+	padding-top: 3px;
+	padding-right: 0;
+	text-align: right;
+}

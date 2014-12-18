@@ -1,0 +1,60 @@
+/* =Navigation
+----------------------------------------------- */
+
+.site-main [class*="navigation"] {
+	margin: 0 0 $vspacing;
+	overflow: hidden;
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+
+}
+
+.logged-in {
+
+	.navbar-fixed-top { 
+		top: 30px;
+	}
+		
+	.site-content {
+		padding-top: 120px;
+	}
+
+}
+
+.sub-menu {
+	position: absolute;
+	list-style: none;
+	background: $green;
+	display: none;
+	margin-left: 0;
+
+	li {
+		width: 200px;
+		padding: 5px 20px;
+
+		&:hover {
+			background: $brown;
+		}
+	}
+}
+
+.menu-item-has-children:hover .sub-menu {
+	display: block;
+}
+
+.menu-item-has-children:focus {
+	background: $brown;
+}
+
+.current-menu-item {
+	background: $brown;
+}

@@ -1,0 +1,46 @@
+/* =Asides
+----------------------------------------------- */
+
+.blog .format-aside, .archive .format-aside {
+	.entry-title {
+		display: none;
+	}
+}
+
+.album-block {
+	text-align: center;
+	cursor: pointer;
+	margin-bottom: 20px;
+	
+	&:hover {
+
+		h5 {
+			border-bottom: solid $light-green 2px;
+		}
+
+	}
+
+	h5 {
+		margin-top: 10px;
+		padding-bottom: 10px;
+		border-bottom: solid #dddfe3 2px;
+
+		
+	}
+}
+
+.info-tab {
+	margin-top: -111px;
+	background: $light-blue;
+	padding: 30px;
+	color: #fff;
+	margin-bottom: 30px;
+
+	.tab {
+		border-right: 1px solid #fff;
+
+		&:last-of-type {
+			border-right: 0;
+		}
+	}
+}

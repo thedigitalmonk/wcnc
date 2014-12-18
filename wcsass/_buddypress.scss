@@ -1,0 +1,165 @@
+#buddypress {
+
+	div.profile h4 {
+		color: $blue;
+	}
+
+	input[type=submit] {
+		@extend .btn-default;
+		color: #fff;
+
+		&:hover { 
+			color: #fff;
+			background: $brown;
+		}
+
+	}
+
+	div.generic-button a, p > a.button {
+		@extend .btn-default;
+		font-size: 14px;
+		padding: 10px;
+		color: $green;
+		background: #fff;
+		border: 1px solid $green;
+		border-radius: 3px;
+
+
+	 		&:hover {
+				color: #fff;
+				background: $green;
+				font-size: 14px;
+				padding: 10px;
+				border: 1px solid $green;
+			}
+	}
+
+	div.activity-meta {
+		margin-top: 10px;
+	}
+
+	div.activity-meta a {
+		background: #fff;
+		border: none;
+		color: $blue;
+		font-size: 14px;
+
+		&:hover, &:focus {
+			border: none;
+		}
+	}
+
+	div.activity-meta .unfav {
+		background: #f39c12;
+		color: #fff;
+	}
+
+	 div.activity-comments form {
+	 	input, div.ac-reply-content a {
+	 		font-size: 14px;
+	 	}
+	}
+
+	div.activity-comments ul li {
+		background: $off-white;
+		padding: 20px;
+	}
+
+	div.item-list-tabs#object-nav {
+		padding: 10px 0;
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+	}
+
+
+	 ul.item-list li div.item-title {
+	 	font-size: 100%;
+	 	width: 100%;
+
+	 	span {
+	 		font-size: 90%;
+	 	}
+	 }
+
+	table.profile-fields  {
+		margin-top: 15px;
+
+		tr {
+			border-bottom: 1px solid #eee;
+		}
+
+		tr.alt {
+			background: $off-white;
+		}
+
+		tr:first-child {
+			border-top: 1px solid #eee;
+		}
+
+		tr.alt td {
+			background: none;
+		}
+
+		tr td.label {
+			display: inline-block;
+			border-right: none;
+			width: auto;
+			font-weight: $bold;
+			color: $brown;
+			font-size: 100%;
+			vertical-align: bottom;
+			//padding-left: 0;
+		}
+
+	}
+
+	#whats-new {
+		height: 50px;
+	}
+
+	#whats-new-options {
+		height: auto !important
+	}
+
+	form#whats-new-form textarea {
+		width: 100%;
+	}
+
+	div.item-list-tabs ul li a span {
+		border: none;
+		border-radius: 0;
+	}
+
+	 div.item-list-tabs ul {
+
+		li.current a, li.selected a { 
+			background: beige;
+		}
+
+	 }
+
+	 .activity-list li .activity-content {
+
+	 	.activity-header, .comment-header {
+	 		line-height: 1.5;
+	 	}
+	 }
+
+	 .activity-list li.mini { 
+	 	font-size: 100%;
+
+	 	.activity-avatar img.avatar  {
+	 		height: auto;
+	 		width: auto;
+	 		margin-left: 0;
+	 	}
+
+	}
+
+	div.dir-search input[type=text], li.groups-members-search input[type=text] {
+		font-size: 100%;
+		padding: 5px 20px;
+		font-weight: 400;
+	}
+
+}

@@ -1,0 +1,67 @@
+/* =Menu
+----------------------------------------------- */
+#masthead{
+	background: $green;
+}
+
+.menu-container {
+	position: relative;
+}
+
+.navbar-brand {
+	background: url('img/logo.png');
+	width: 202px;
+}
+
+.navbar-default {
+	background-color: $green;
+}
+
+.navbar-default .navbar-nav { 
+
+	.current-menu-item {
+		a{
+			background: $brown;
+		}
+	}
+
+	li { 
+
+		a {
+			color: #fff;
+
+			&:hover {
+				color: #fff;
+				background: $brown;
+			}
+		}
+	}
+}
+
+.search-form {
+	display: none;
+}
+
+.navbar{
+
+	.search-form {
+		position: absolute;
+		top: 50px;
+		width: 100%;
+		
+	}
+
+	.form-group {
+		position: absolute;
+		width: 40%;
+		right: 69px;
+	}
+
+	.form-control {
+		border-radius: 0;
+		border: none;
+		width: 100%;
+	}
+
+
+}
