@@ -26,12 +26,30 @@
 .bigimage {
 	padding-left: 0;
 	padding-right: 0;
+	position: relative;
 }
 
 .appendSection {
-	margin-top: -135px;
+	position: absolute;
+	bottom: 0;
 	background: rgba(13, 172, 40, 0.5);
 	padding: 20px 60px 20px 60px;
+}
+
+.quick-links {
+	display: none;
+	text-align: center;
+	color: #fff;
+	margin: 10px 0;
+	font-weight: $bold;
+	text-transform: uppercase;
+
+	.link-btn {
+		background: $dark-green;
+		border-radius: 6px;
+		padding: 10px 20px;
+		display: inline-block;
+	}
 }
 
 .event-block {

@@ -13,7 +13,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area col-md-8">
+	<div id="primary" class="content-area col-md-8 col-sm-12 cold-xs-12">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -21,8 +21,8 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-			<div class="post-block col-md-12">
-				<div class="thumbnail-blog col-md-4">
+			<div class="post-block col-md-12 col-sm-12 col-xs-12">
+				<div class="thumbnail-blog col-md-4 col-sm-4 col-xs-5">
 					<a href="<?php the_permalink(); ?>">
 
 						<?php 
@@ -46,7 +46,7 @@ get_header(); ?>
 						?>
 					</a>
 				</div>
-				<div class="post-info col-md-8">
+				<div class="post-info col-md-8 col-sm-8 col-xs-7">
 					<div class="posttype"><?php echo $type; ?></div>
 					<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 					<div class="author"><em>by <?php the_author_posts_link(); ?></em></div>

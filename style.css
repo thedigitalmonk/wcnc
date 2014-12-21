@@ -25,6 +25,7 @@ and Blueprint http://www.blueprintcss.org/
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic);
 /* =Reset
 -------------------------------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Noto+Serif:700);
 /* line 4, wcsass/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -8234,8 +8235,12 @@ body {
 .site-info, #mc_embed_signup {
   padding-left: 0;
 }
+/* line 97, wcsass/_global.scss */
+.site-info .mc-field-group input[type="email"], #mc_embed_signup .mc-field-group input[type="email"] {
+  width: 300px;
+}
 
-/* line 98, wcsass/_global.scss */
+/* line 102, wcsass/_global.scss */
 .site-credits {
   padding-top: 3px;
   padding-right: 0;
@@ -8265,35 +8270,37 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 23, wcsass/_typography.scss */
 h1 {
+  font-family: "Noto Serif", "Georgia", serif;
   font-size: 37px;
+  line-height: 1.3;
 }
 
-/* line 27, wcsass/_typography.scss */
+/* line 29, wcsass/_typography.scss */
 h2 {
   font-size: 28px;
 }
 
-/* line 31, wcsass/_typography.scss */
+/* line 33, wcsass/_typography.scss */
 h3 {
   font-size: 21px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-/* line 37, wcsass/_typography.scss */
+/* line 39, wcsass/_typography.scss */
 h4 {
   font-size: 21px;
   margin-bottom: 15px;
 }
 
-/* line 42, wcsass/_typography.scss */
+/* line 44, wcsass/_typography.scss */
 h5 {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 600;
 }
 
-/* line 48, wcsass/_typography.scss */
+/* line 50, wcsass/_typography.scss */
 .page-title {
   font-size: 21px;
   font-weight: 600;
@@ -8302,7 +8309,7 @@ h5 {
   margin-bottom: 30px;
 }
 
-/* line 56, wcsass/_typography.scss */
+/* line 58, wcsass/_typography.scss */
 hr {
   background-color: #ccc;
   border: 0;
@@ -8311,78 +8318,78 @@ hr {
 }
 
 /* Text elements */
-/* line 64, wcsass/_typography.scss */
+/* line 66, wcsass/_typography.scss */
 p {
   margin-bottom: 1.5em;
 }
 
-/* line 67, wcsass/_typography.scss */
+/* line 69, wcsass/_typography.scss */
 ul, ol {
   margin: 0 0 1.5em 3em;
 }
 
-/* line 70, wcsass/_typography.scss */
+/* line 72, wcsass/_typography.scss */
 ul {
   list-style: disc;
 }
 
-/* line 73, wcsass/_typography.scss */
+/* line 75, wcsass/_typography.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 76, wcsass/_typography.scss */
+/* line 78, wcsass/_typography.scss */
 li > ul,
 li > ol {
   margin-bottom: 0;
   margin-left: 1.5em;
 }
 
-/* line 81, wcsass/_typography.scss */
+/* line 83, wcsass/_typography.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 84, wcsass/_typography.scss */
+/* line 86, wcsass/_typography.scss */
 dd {
   margin: 0 1.5em 1.5em;
 }
 
-/* line 87, wcsass/_typography.scss */
+/* line 89, wcsass/_typography.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 90, wcsass/_typography.scss */
+/* line 92, wcsass/_typography.scss */
 dfn, cite, em, i {
   font-style: italic;
 }
 
-/* line 93, wcsass/_typography.scss */
+/* line 95, wcsass/_typography.scss */
 blockquote {
   font-family: "Georgia", serif;
   font-style: italic;
-  margin: 0 1.5em;
+  margin-bottom: 1.5em;
 }
 
-/* line 99, wcsass/_typography.scss */
+/* line 101, wcsass/_typography.scss */
 .single blockquote {
   font-size: 28px;
-  margin: 1.5em;
+  margin-bottom: 1.5em;
 }
 @media (max-width: 480px) {
-  /* line 99, wcsass/_typography.scss */
+  /* line 101, wcsass/_typography.scss */
   .single blockquote {
     font-size: 21px;
   }
 }
 
-/* line 108, wcsass/_typography.scss */
+/* line 110, wcsass/_typography.scss */
 address {
   margin: 0 0 1.5em;
 }
 
-/* line 111, wcsass/_typography.scss */
+/* line 113, wcsass/_typography.scss */
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
@@ -8395,24 +8402,24 @@ pre {
   max-width: 100%;
 }
 
-/* line 122, wcsass/_typography.scss */
+/* line 124, wcsass/_typography.scss */
 code, kbd, tt, var {
   font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 
-/* line 125, wcsass/_typography.scss */
+/* line 127, wcsass/_typography.scss */
 abbr, acronym {
   border-bottom: 1px dotted #666;
   cursor: help;
 }
 
-/* line 129, wcsass/_typography.scss */
+/* line 131, wcsass/_typography.scss */
 mark, ins {
   background: #fff9c0;
   text-decoration: none;
 }
 
-/* line 133, wcsass/_typography.scss */
+/* line 135, wcsass/_typography.scss */
 sup,
 sub {
   font-size: 75%;
@@ -8422,43 +8429,43 @@ sub {
   vertical-align: baseline;
 }
 
-/* line 141, wcsass/_typography.scss */
+/* line 143, wcsass/_typography.scss */
 sup {
   bottom: 1ex;
 }
 
-/* line 144, wcsass/_typography.scss */
+/* line 146, wcsass/_typography.scss */
 sub {
   top: .5ex;
 }
 
-/* line 147, wcsass/_typography.scss */
+/* line 149, wcsass/_typography.scss */
 small {
   font-size: 75%;
 }
 
-/* line 150, wcsass/_typography.scss */
+/* line 152, wcsass/_typography.scss */
 big {
   font-size: 125%;
 }
 
-/* line 153, wcsass/_typography.scss */
+/* line 155, wcsass/_typography.scss */
 figure {
   margin: 0;
 }
 
-/* line 156, wcsass/_typography.scss */
+/* line 158, wcsass/_typography.scss */
 table {
   margin: 0 0 1.5em;
   width: 100%;
 }
 
-/* line 160, wcsass/_typography.scss */
+/* line 162, wcsass/_typography.scss */
 th {
   font-weight: bold;
 }
 
-/* line 163, wcsass/_typography.scss */
+/* line 165, wcsass/_typography.scss */
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -8467,7 +8474,7 @@ img {
 }
 
 /* Links */
-/* line 169, wcsass/_typography.scss */
+/* line 171, wcsass/_typography.scss */
 a {
   color: #0dac28;
 }
@@ -8477,11 +8484,58 @@ a:hover, a:active, a:focus {
   text-decoration: none;
 }
 
-/* line 176, wcsass/_typography.scss */
+/* line 178, wcsass/_typography.scss */
 a:visited {
   color: #0dac28;
 }
 
+/* line 182, wcsass/_typography.scss */
+.single-post #primary .entry-content, .single-post #primary .entry-footer, .single-post #primary .post-navigation, .single-post #primary #disqus_thread {
+  font-size: 18px;
+}
+
+@media (max-width: 599px) {
+  /* line 188, wcsass/_typography.scss */
+  h1 {
+    font-family: "Noto Serif", "Georgia", serif;
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  /* line 194, wcsass/_typography.scss */
+  h2 {
+    font-size: 21px;
+  }
+
+  /* line 198, wcsass/_typography.scss */
+  h3 {
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #0dac28;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+
+  /* line 208, wcsass/_typography.scss */
+  h4 {
+    font-size: 21px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  /* line 215, wcsass/_typography.scss */
+  .page-title {
+    font-size: 18px;
+  }
+
+  /* line 219, wcsass/_typography.scss */
+  .single-post #primary .entry-content, .single-post #primary .entry-footer, .single-post #primary .post-navigation, .single-post #primary #disqus_thread {
+    font-size: 16px;
+  }
+}
 /* line 1, wcsass/_forms.scss */
 button,
 input,
@@ -8882,6 +8936,73 @@ textarea {
   width: 100%;
 }
 
+/* line 69, wcsass/_menu.scss */
+.navbar-toggle {
+  font-size: 18px;
+  -webkit-appearance: none;
+  text-shadow: none;
+  background-color: #0dac28;
+  font-weight: 600;
+  box-shadow: none;
+  border: none;
+  color: #fff;
+}
+/* line 79, wcsass/_menu.scss */
+.navbar-toggle:active, .navbar-toggle:focus, .navbar-toggle:hover {
+  border: none;
+  background-color: #008f00 !important;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+/* line 88, wcsass/_menu.scss */
+.overlay {
+  display: none;
+  z-index: 200;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+}
+
+/* line 100, wcsass/_menu.scss */
+.cover {
+  display: block;
+}
+
+/* line 104, wcsass/_menu.scss */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+/* line 109, wcsass/_menu.scss */
+.menu-open {
+  right: 0 !important;
+}
+
+/* line 113, wcsass/_menu.scss */
+.navbar-brand {
+  font-size: 0;
+}
+
+/* line 117, wcsass/_menu.scss */
+.quick-close {
+  display: none;
+  color: #fff;
+}
+/* line 121, wcsass/_menu.scss */
+.quick-close span {
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
 /* line 3, wcsass/_home.scss */
 .bigbanner .title-wrap h3 {
   background: rgba(13, 172, 40, 0.8);
@@ -8909,16 +9030,35 @@ textarea {
 .bigimage {
   padding-left: 0;
   padding-right: 0;
+  position: relative;
 }
 
-/* line 31, wcsass/_home.scss */
+/* line 32, wcsass/_home.scss */
 .appendSection {
-  margin-top: -135px;
+  position: absolute;
+  bottom: 0;
   background: rgba(13, 172, 40, 0.5);
   padding: 20px 60px 20px 60px;
 }
 
-/* line 37, wcsass/_home.scss */
+/* line 39, wcsass/_home.scss */
+.quick-links {
+  display: none;
+  text-align: center;
+  color: #fff;
+  margin: 10px 0;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* line 47, wcsass/_home.scss */
+.quick-links .link-btn {
+  background: #33363b;
+  border-radius: 6px;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+/* line 55, wcsass/_home.scss */
 .event-block {
   padding: 1px;
   background: #fff;
@@ -8926,44 +9066,44 @@ textarea {
   margin-bottom: 20px;
 }
 
-/* line 44, wcsass/_home.scss */
+/* line 62, wcsass/_home.scss */
 .magazine-block {
   padding-right: 0;
   padding-left: 0;
 }
 
-/* line 49, wcsass/_home.scss */
+/* line 67, wcsass/_home.scss */
 .thumbnail-preview, .widget-horizontal {
   padding: 0;
 }
 
-/* line 53, wcsass/_home.scss */
+/* line 71, wcsass/_home.scss */
 .widget-horizontal {
   margin-top: 30px;
 }
 
-/* line 59, wcsass/_home.scss */
+/* line 77, wcsass/_home.scss */
 .fp-widget h4 {
   margin-bottom: 0;
 }
-/* line 62, wcsass/_home.scss */
+/* line 80, wcsass/_home.scss */
 .fp-widget h4 a {
   color: #444;
 }
 
-/* line 68, wcsass/_home.scss */
+/* line 86, wcsass/_home.scss */
 .events-widget, .photos-widget {
   padding-left: 0;
 }
-/* line 71, wcsass/_home.scss */
+/* line 89, wcsass/_home.scss */
 .events-widget a, .photos-widget a {
   color: #444;
 }
-/* line 75, wcsass/_home.scss */
+/* line 93, wcsass/_home.scss */
 .events-widget .info, .photos-widget .info {
   padding: 10px;
 }
-/* line 79, wcsass/_home.scss */
+/* line 97, wcsass/_home.scss */
 .events-widget h4, .photos-widget h4 {
   margin-bottom: 0;
 }
@@ -9024,18 +9164,23 @@ textarea {
 }
 
 /* line 32, wcsass/_postformats.scss */
+.post-thumbnail {
+  position: relative;
+}
+
+/* line 36, wcsass/_postformats.scss */
 .info-tab {
-  margin-top: -111px;
+  position: absolute;
+  bottom: 0;
   background: rgba(59, 141, 189, 0.8);
   padding: 30px;
   color: #fff;
-  margin-bottom: 30px;
 }
-/* line 39, wcsass/_postformats.scss */
+/* line 43, wcsass/_postformats.scss */
 .info-tab .tab {
   border-right: 1px solid #fff;
 }
-/* line 42, wcsass/_postformats.scss */
+/* line 46, wcsass/_postformats.scss */
 .info-tab .tab:last-of-type {
   border-right: 0;
 }
@@ -9419,16 +9564,364 @@ object {
   color: #ddd;
 }
 
-/* Biggest Screen */
-/* line 3, wcsass/_responsive.scss */
+/* line 54, wcsass/_blog.scss */
+.single-post #primary {
+  padding: 0 0 30px 0;
+}
+/* line 57, wcsass/_blog.scss */
+.single-post #primary .post-thumbnail {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+/* line 62, wcsass/_blog.scss */
+.single-post #primary header {
+  padding: 0 90px;
+}
+/* line 66, wcsass/_blog.scss */
+.single-post #primary .entry-content, .single-post #primary .entry-footer, .single-post #primary .post-navigation, .single-post #primary #disqus_thread {
+  padding: 0 90px;
+}
+
+/* line 4, wcsass/_responsive.scss */
 #content {
   min-height: 800px;
 }
 
-@media (min-width: 991px) and (max-width: 1169px) {
-  /* line 9, wcsass/_responsive.scss */
+@media (max-width: 1200px) {
+  /* line 13, wcsass/_responsive.scss */
+  blockquote {
+    padding: 10px 0px 10px 20px;
+  }
+
+  /* line 17, wcsass/_responsive.scss */
   .appendSection {
-    margin-top: -134px;
     padding: 20px 30px;
+  }
+
+  /* line 21, wcsass/_responsive.scss */
+  .post-block {
+    background: none;
+  }
+
+  /* line 25, wcsass/_responsive.scss */
+  .post-info {
+    padding: 0 30px;
+  }
+
+  /* line 31, wcsass/_responsive.scss */
+  .site-info .mc-field-group input[type="email"], #mc_embed_signup .mc-field-group input[type="email"] {
+    width: 200px;
+  }
+}
+@media (max-width: 991px) {
+  /* line 43, wcsass/_responsive.scss */
+  .appendSection {
+    padding: 20px 10px 0 10px;
+    top: 25%;
+    background: rgba(13, 172, 40, 0.6);
+    right: 30px;
+    bottom: initial;
+    z-index: 100;
+    width: 45%;
+  }
+  /* line 52, wcsass/_responsive.scss */
+  .appendSection .col-sm-12 {
+    margin-bottom: 20px;
+  }
+
+  /* line 57, wcsass/_responsive.scss */
+  .photos-widget {
+    margin-top: 137px;
+  }
+
+  /* line 61, wcsass/_responsive.scss */
+  .fp-widget {
+    padding-left: 0;
+  }
+
+  /* line 65, wcsass/_responsive.scss */
+  .site-footer #mc_embed_signup {
+    padding-top: 10px;
+    text-align: center;
+  }
+  /* line 69, wcsass/_responsive.scss */
+  .site-footer #mc_embed_signup .mc-field-group input[type="email"] {
+    width: 300px;
+  }
+
+  /* line 74, wcsass/_responsive.scss */
+  .site-credits {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  /* line 79, wcsass/_responsive.scss */
+  #secondary {
+    margin-top: 20px;
+    padding-left: 0;
+  }
+
+  /* line 84, wcsass/_responsive.scss */
+  .post-block {
+    background: #fff;
+  }
+
+  /* line 88, wcsass/_responsive.scss */
+  .post-info {
+    padding: 20px 20px 0 20px;
+  }
+
+  /* line 92, wcsass/_responsive.scss */
+  .post-thumbnail {
+    min-height: 1px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 102, wcsass/_responsive.scss */
+  .blog #primary, .archive #primary, #secondary {
+    padding: 0 10px;
+  }
+
+  /* line 107, wcsass/_responsive.scss */
+  .page-title {
+    margin-left: 10px;
+  }
+
+  /* line 111, wcsass/_responsive.scss */
+  .navbar-nav {
+    margin: 0 -15px;
+  }
+
+  /* line 115, wcsass/_responsive.scss */
+  .navbar-collapse {
+    width: 240px;
+    min-height: 700px;
+    padding-top: 0;
+    top: 52px;
+    z-index: 1001;
+    right: -240px;
+    position: fixed;
+    background: #33363b;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  /* line 129, wcsass/_responsive.scss */
+  .sub-menu {
+    position: relative;
+    background: #33363b;
+  }
+
+  /* line 134, wcsass/_responsive.scss */
+  .navbar-nav > li > a {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  /* line 143, wcsass/_responsive.scss */
+  .navbar .form-group {
+    width: 100%;
+    left: 0;
+  }
+  /* line 147, wcsass/_responsive.scss */
+  .navbar .search-form {
+    left: 0;
+    z-index: 1002;
+  }
+
+  /* line 154, wcsass/_responsive.scss */
+  .quick-links {
+    display: block;
+  }
+
+  /* line 158, wcsass/_responsive.scss */
+  .appendSection {
+    top: 0;
+    width: 320px;
+    left: -320px;
+    min-height: 600px;
+    position: absolute;
+    background: #33363b;
+    height: auto;
+    bottom: initial;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 201;
+  }
+  /* line 172, wcsass/_responsive.scss */
+  .appendSection .col-xs-12 {
+    padding: 0;
+  }
+
+  /* line 177, wcsass/_responsive.scss */
+  .as-open {
+    left: 0;
+  }
+
+  /* line 181, wcsass/_responsive.scss */
+  .quick-close {
+    display: block;
+  }
+
+  /* line 185, wcsass/_responsive.scss */
+  .photos-widget {
+    margin-top: 0;
+  }
+
+  /* line 189, wcsass/_responsive.scss */
+  .widget-horizontal {
+    margin-top: 0;
+    padding: 0 10px;
+  }
+
+  /* line 194, wcsass/_responsive.scss */
+  .site-info {
+    padding: 0 15px;
+  }
+
+  /* line 198, wcsass/_responsive.scss */
+  #mc_embed_signup {
+    display: none;
+  }
+
+  /* line 202, wcsass/_responsive.scss */
+  .site-credits {
+    margin-top: 0;
+  }
+
+  /* line 206, wcsass/_responsive.scss */
+  .logged-in .navbar-fixed-top {
+    top: 46px;
+  }
+
+  /* line 210, wcsass/_responsive.scss */
+  #wpadminbar {
+    position: fixed;
+  }
+
+  /* line 214, wcsass/_responsive.scss */
+  .site-content {
+    padding-top: 50px;
+  }
+
+  /* line 219, wcsass/_responsive.scss */
+  .blog .site-content, .archive .site-content {
+    padding-top: 80px;
+  }
+
+  /* line 224, wcsass/_responsive.scss */
+  .logged-in .site-content {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 640px) {
+  /* line 234, wcsass/_responsive.scss */
+  .single-post #primary header {
+    padding: 0 60px;
+  }
+  /* line 238, wcsass/_responsive.scss */
+  .single-post #primary .entry-content, .single-post #primary .entry-footer, .single-post #primary .post-navigation, .single-post #primary #disqus_thread {
+    padding: 0 60px;
+  }
+}
+@media (max-width: 599px) {
+  /* line 247, wcsass/_responsive.scss */
+  .events-widget, .photos-widget, .fp-widget {
+    width: 100%;
+  }
+  /* line 250, wcsass/_responsive.scss */
+  .events-widget .thumbnail-preview, .photos-widget .thumbnail-preview, .fp-widget .thumbnail-preview {
+    width: 33%;
+  }
+
+  /* line 255, wcsass/_responsive.scss */
+  .magazine-block {
+    width: 100%;
+    background: #fff;
+  }
+
+  /* line 260, wcsass/_responsive.scss */
+  .post-block {
+    background: none;
+  }
+  /* line 263, wcsass/_responsive.scss */
+  .post-block .thumbnail-blog {
+    width: 30%;
+  }
+
+  /* line 268, wcsass/_responsive.scss */
+  .post-info {
+    width: 70%;
+    padding: 0 30px;
+  }
+
+  /* line 275, wcsass/_responsive.scss */
+  .single-post #primary header {
+    padding: 0 30px;
+  }
+  /* line 279, wcsass/_responsive.scss */
+  .single-post #primary .entry-content, .single-post #primary .entry-footer, .single-post #primary .post-navigation, .single-post #primary #disqus_thread {
+    padding: 0 30px;
+  }
+
+  /* line 284, wcsass/_responsive.scss */
+  #buddypress .standard-form #basic-details-section, #buddypress .standard-form #blog-details-section, #buddypress .standard-form #profile-details-section {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  /* line 294, wcsass/_responsive.scss */
+  .events-widget .thumbnail-preview, .photos-widget .thumbnail-preview, .fp-widget .thumbnail-preview {
+    width: 100%;
+  }
+  /* line 297, wcsass/_responsive.scss */
+  .events-widget .thumbnail-preview img, .photos-widget .thumbnail-preview img, .fp-widget .thumbnail-preview img {
+    width: 100%;
+  }
+
+  /* line 303, wcsass/_responsive.scss */
+  .post-block {
+    background: #fff;
+  }
+  /* line 306, wcsass/_responsive.scss */
+  .post-block .thumbnail-blog {
+    width: 100%;
+  }
+  /* line 309, wcsass/_responsive.scss */
+  .post-block .thumbnail-blog img {
+    width: 100%;
+  }
+
+  /* line 315, wcsass/_responsive.scss */
+  .post-info {
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  /* line 321, wcsass/_responsive.scss */
+  .magazine-block .info {
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 0;
+  }
+}
+@media (max-width: 360px) {
+  /* line 332, wcsass/_responsive.scss */
+  .navbar-default .navbar-brand {
+    font-weight: 700;
+    font-size: 28px;
+    color: #f5f5f5;
+    background: none;
+  }
+
+  /* line 341, wcsass/_responsive.scss */
+  .single-post #primary header {
+    padding: 0 20px;
+  }
+  /* line 345, wcsass/_responsive.scss */
+  .single-post #primary .entry-content, .single-post #primary .entry-footer, .single-post #primary .post-navigation, .single-post #primary #disqus_thread {
+    padding: 0 20px;
   }
 }

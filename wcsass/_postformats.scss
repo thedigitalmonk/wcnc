@@ -29,12 +29,16 @@
 	}
 }
 
+.post-thumbnail {
+	position: relative;
+}
+
 .info-tab {
-	margin-top: -111px;
+	position: absolute;
+	bottom: 0;
 	background: $light-blue;
 	padding: 30px;
 	color: #fff;
-	margin-bottom: 30px;
 
 	.tab {
 		border-right: 1px solid #fff;

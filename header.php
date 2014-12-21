@@ -20,22 +20,20 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	
+
+<div class="overlay"></div>
 
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container menu-container">
+
+    <div id="site-navigation" class="container menu-container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+               MENU
             </button>
-            <a class="navbar-brand" href="<?php bloginfo(url); ?>"></a>
+            <a class="navbar-brand" href="<?php bloginfo(url); ?>">WCNC.in</a>
         </div>
 
-
-        <?php 
+            <?php 
 
         	   /**
         		* Displays a navigation menu
@@ -45,7 +43,7 @@
         			'theme_location' => 'primary',
         			'menu' => '',
         			'container' => 'div',
-        			'container_class' => 'collapse navbar-collapse navbar-right navbar-ex1-collapse',
+        			'container_class' => 'navbar-collapse navbar-right navbar-ex1-collapse',
         			'container_id' => '',
         			'menu_class' => 'nav navbar-nav',
         			'menu_id' => '',
@@ -62,13 +60,7 @@
         	
         		wp_nav_menu( $args );
 
-
-        ?>
-
-
-
-
-
+            ?>
     </div>
     <!-- /.container -->
 </nav>

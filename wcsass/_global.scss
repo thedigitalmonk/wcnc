@@ -93,6 +93,10 @@ body {
 
 .site-info, #mc_embed_signup {
 	padding-left: 0;
+
+	.mc-field-group input[type="email"] {
+			width: 300px;
+		}
 }
 
 .site-credits {

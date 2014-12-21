@@ -17,7 +17,7 @@
 
 			
 				<!-- Begin MailChimp Signup Form -->
-					<div id="mc_embed_signup" class="col-md-6">
+					<div id="mc_embed_signup" class="col-lg-8 col-md-7 col-xs-12">
 
 						<form action="//thedigitalmonk.us7.list-manage.com/subscribe/post?u=37adedbe8e45f3f375798d51d&amp;id=791957ab74" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
 
@@ -39,7 +39,7 @@
 					</div>
 				<!--End mc_embed_signup-->
 
-				<div class="col-md-4 col-md-offset-2 site-credits">
+				<div class="col-lg-4 col-md-5 col-xs-12 site-credits">
 
 						<span>&copy; <?php echo date("Y") ?> Wilson College Nature Club. <a href="<?php bloginfo(url); ?>/colophon">Site Credits</a></span>
 

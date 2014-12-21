@@ -25,9 +25,7 @@ get_header(); ?>
 
 			<div class="post-thumbnail">
 				<?php the_post_thumbnail(); ?>
-			</div>
-
-			<div class="info-tab col-md-12">
+				<div class="info-tab col-md-12">
 				<?php //variables needed for display
 						$start_date = get_field('start_date');
 						$start_date_format = DateTime::createFromFormat('Ymd', get_field('start_date'));
@@ -80,6 +78,9 @@ get_header(); ?>
 
 				<?php } ?>
 			</div>
+			</div>
+
+			
 
 			<?php if( $reg_fee ) { ?>
 			<div><em>A registration fee of Rs. <?php echo $reg_fee; ?> has to be paid to secure your seat. </em></div>

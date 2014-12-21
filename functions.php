@@ -42,10 +42,10 @@ function wcnc_setup() {
 		add_theme_support( 'post-thumbnails' );
 	}
 	add_image_size( 'homethumb', 100, 75, true); //home thumbnails
-	add_image_size( 'preview', 170, 115, true); //home thumbnails
+	add_image_size( 'preview', 340, 230, true); //home thumbnails
 	add_image_size( 'footprint', 170, 222, true); //footprint thumbnails
 	add_image_size( 'ablumcover', 360, 200, true); //album thumbnails
-	add_image_size( 'blog-thumbnail', 260, 220, true); //album thumbnails
+	add_image_size( 'blog-thumbnail', 360, 308, true); //album thumbnails
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(

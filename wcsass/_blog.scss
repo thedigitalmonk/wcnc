@@ -50,3 +50,20 @@
 	font-weight: 700;
 	color: #ddd;
 }
+
+.single-post #primary {
+	padding: 0 0 30px 0;
+
+	.post-thumbnail {
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+
+	header {
+		padding: 0 90px;
+	}
+
+	.entry-content, .entry-footer, .post-navigation, #disqus_thread {
+		padding: 0 90px;
+	}
+}

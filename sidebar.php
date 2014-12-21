@@ -5,7 +5,7 @@
  * @package wcnc
  */
 ?>
-	<div id="secondary" class="widget-area col-md-4" role="complementary">
+	<div id="secondary" class="widget-area col-md-4 col-sm-12 col-xs-12" role="complementary">
 		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
 			<aside id="search" class="widget widget_search">

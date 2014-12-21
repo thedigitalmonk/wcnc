@@ -1,6 +1,6 @@
 <?php
 /**
- * The Template for displaying all footprints
+ * The Template for displaying all photo albums
  *
  * @package wcnc
  */
@@ -12,8 +12,6 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
-
-			<div class="btn-default download_link"><a href="<?php the_field('link'); ?>"><span class="glyphicon glyphicon-download-alt"></span> &nbsp; Download</a></div>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				

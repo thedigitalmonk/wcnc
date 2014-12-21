@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<section id="primary" class="content-area col-md-8">
+<section id="primary" class="content-area col-md-8 col-sm-12 col-xs-12">
 		<main id="main" class="site-main" role="main">
 
 			<?php if ( have_posts() ) : ?>
@@ -16,7 +16,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 			<a href="<?php the_permalink(); ?>">
-			<div class="album-block col-md-6">
+			<div class="album-block col-md-6 col-sm-6 col-xs-12">
 
 				<?php the_post_thumbnail('ablumcover'); ?>
 

@@ -48,4 +48,67 @@ $('.search-show').on('click', function(e) {
 		$("#aw-whats-new-submit").prop("disabled", false);
 	});
 
+
+
+/* Nav Menu and Quick links Panel Animation
+*******************************************/
+
+var overlay = $(".overlay");
+
+var menuRight = $(".navbar-collapse");
+
+var showNav = $(".navbar-toggle");
+
+var apSection = $(".appendSection");
+	
+	showNav.on('click', function(e) {
+
+		e.preventDefault();
+
+			showNav.toggleClass("active");
+
+			menuRight.toggleClass("menu-open");
+
+			overlay.toggleClass("cover");
+
+	});
+
+	overlay.on('click', function(e) {
+
+		e.preventDefault();
+
+			menuRight.removeClass("menu-open");
+
+			overlay.removeClass("cover");
+
+			apSection.removeClass("as-open");
+
+	});
+
+	$(".quick-links").on('click', function(e) {
+
+		e.preventDefault();
+
+			apSection.toggleClass("as-open");
+
+			overlay.toggleClass("cover");
+
+	});
+
+	$(".quick-close").on('click', function(e) {
+
+		e.preventDefault();
+
+			menuRight.removeClass("menu-open");
+
+			overlay.removeClass("cover");
+
+			apSection.removeClass("as-open");
+
+	});
+
+
+
+
+//END OF DOCUMENT.READY
 });
