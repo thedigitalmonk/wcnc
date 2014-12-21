@@ -246,9 +246,17 @@
 
 	.events-widget, .photos-widget, .fp-widget {
 		width: 100%;
+		padding-right: 0;
 
 		.thumbnail-preview {
 			width: 33%;
+		}
+
+		h3 {
+			background: $green;
+			color: #fff;
+			padding: 10px;
+			margin-bottom: 0;
 		}
 	}
 
@@ -327,7 +335,11 @@
 
 }
 
-@media (max-width: 360px) { 
+@media (max-width: 360px) {
+
+	#primary {
+		padding: 20px 10px;
+	}
 
 	.navbar-default .navbar-brand {
 		font-weight: 700;

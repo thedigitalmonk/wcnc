@@ -10,7 +10,7 @@ License URI: License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Domain Path: /languages/
 Text Domain: _s
 Tags:
-Version: 2.0.0
+Version: 3.0.0
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -8512,13 +8512,9 @@ a:visited {
     font-size: 21px;
     font-weight: 700;
     text-transform: uppercase;
-    background: #0dac28;
-    color: #fff;
-    padding: 10px;
-    margin-bottom: 0;
   }
 
-  /* line 208, wcsass/_typography.scss */
+  /* line 204, wcsass/_typography.scss */
   h4 {
     font-size: 21px;
     margin-bottom: 15px;
@@ -8526,12 +8522,12 @@ a:visited {
     line-height: 1.4;
   }
 
-  /* line 215, wcsass/_typography.scss */
+  /* line 211, wcsass/_typography.scss */
   .page-title {
     font-size: 18px;
   }
 
-  /* line 219, wcsass/_typography.scss */
+  /* line 215, wcsass/_typography.scss */
   .single-post #primary .entry-content, .single-post #primary .entry-footer, .single-post #primary .post-navigation, .single-post #primary #disqus_thread {
     font-size: 16px;
   }
@@ -9830,77 +9826,85 @@ object {
   /* line 247, wcsass/_responsive.scss */
   .events-widget, .photos-widget, .fp-widget {
     width: 100%;
+    padding-right: 0;
   }
-  /* line 250, wcsass/_responsive.scss */
+  /* line 251, wcsass/_responsive.scss */
   .events-widget .thumbnail-preview, .photos-widget .thumbnail-preview, .fp-widget .thumbnail-preview {
     width: 33%;
   }
-
   /* line 255, wcsass/_responsive.scss */
+  .events-widget h3, .photos-widget h3, .fp-widget h3 {
+    background: #0dac28;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+
+  /* line 263, wcsass/_responsive.scss */
   .magazine-block {
     width: 100%;
     background: #fff;
   }
 
-  /* line 260, wcsass/_responsive.scss */
+  /* line 268, wcsass/_responsive.scss */
   .post-block {
     background: none;
   }
-  /* line 263, wcsass/_responsive.scss */
+  /* line 271, wcsass/_responsive.scss */
   .post-block .thumbnail-blog {
     width: 30%;
   }
 
-  /* line 268, wcsass/_responsive.scss */
+  /* line 276, wcsass/_responsive.scss */
   .post-info {
     width: 70%;
     padding: 0 30px;
   }
 
-  /* line 275, wcsass/_responsive.scss */
+  /* line 283, wcsass/_responsive.scss */
   .single-post #primary header {
     padding: 0 30px;
   }
-  /* line 279, wcsass/_responsive.scss */
+  /* line 287, wcsass/_responsive.scss */
   .single-post #primary .entry-content, .single-post #primary .entry-footer, .single-post #primary .post-navigation, .single-post #primary #disqus_thread {
     padding: 0 30px;
   }
 
-  /* line 284, wcsass/_responsive.scss */
+  /* line 292, wcsass/_responsive.scss */
   #buddypress .standard-form #basic-details-section, #buddypress .standard-form #blog-details-section, #buddypress .standard-form #profile-details-section {
     width: 100%;
   }
 }
 @media (max-width: 400px) {
-  /* line 294, wcsass/_responsive.scss */
+  /* line 302, wcsass/_responsive.scss */
   .events-widget .thumbnail-preview, .photos-widget .thumbnail-preview, .fp-widget .thumbnail-preview {
     width: 100%;
   }
-  /* line 297, wcsass/_responsive.scss */
+  /* line 305, wcsass/_responsive.scss */
   .events-widget .thumbnail-preview img, .photos-widget .thumbnail-preview img, .fp-widget .thumbnail-preview img {
     width: 100%;
   }
 
-  /* line 303, wcsass/_responsive.scss */
+  /* line 311, wcsass/_responsive.scss */
   .post-block {
     background: #fff;
   }
-  /* line 306, wcsass/_responsive.scss */
+  /* line 314, wcsass/_responsive.scss */
   .post-block .thumbnail-blog {
     width: 100%;
   }
-  /* line 309, wcsass/_responsive.scss */
+  /* line 317, wcsass/_responsive.scss */
   .post-block .thumbnail-blog img {
     width: 100%;
   }
 
-  /* line 315, wcsass/_responsive.scss */
+  /* line 323, wcsass/_responsive.scss */
   .post-info {
     width: 100%;
     padding: 10px 15px;
   }
 
-  /* line 321, wcsass/_responsive.scss */
+  /* line 329, wcsass/_responsive.scss */
   .magazine-block .info {
     width: 100%;
     padding-top: 10px;
@@ -9908,7 +9912,12 @@ object {
   }
 }
 @media (max-width: 360px) {
-  /* line 332, wcsass/_responsive.scss */
+  /* line 340, wcsass/_responsive.scss */
+  #primary {
+    padding: 20px 10px;
+  }
+
+  /* line 344, wcsass/_responsive.scss */
   .navbar-default .navbar-brand {
     font-weight: 700;
     font-size: 28px;
@@ -9916,11 +9925,11 @@ object {
     background: none;
   }
 
-  /* line 341, wcsass/_responsive.scss */
+  /* line 353, wcsass/_responsive.scss */
   .single-post #primary header {
     padding: 0 20px;
   }
-  /* line 345, wcsass/_responsive.scss */
+  /* line 357, wcsass/_responsive.scss */
   .single-post #primary .entry-content, .single-post #primary .entry-footer, .single-post #primary .post-navigation, .single-post #primary #disqus_thread {
     padding: 0 20px;
   }
