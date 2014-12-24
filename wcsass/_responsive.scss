@@ -117,7 +117,7 @@
 	    min-height: 700px;
 	    padding-top: 0;
 	    top: 52px;
-	    z-index: 1001;
+	    z-index: 501;
 	    right: -240px;
 		position: fixed;
 		background: $dark-green;
@@ -263,6 +263,7 @@
 	.magazine-block {
 		width: 100%;
 		background: #fff;
+		box-shadow: 0 0 1px gray inset;
 	}
 
 	.post-block {
@@ -323,6 +324,11 @@
 	.post-info {
 		width: 100%;
 		padding: 10px 15px;
+	}
+
+	.posttype {
+		bottom: 5px;
+		top: auto;
 	}
 
 	.magazine-block {

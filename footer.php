@@ -41,7 +41,7 @@
 
 				<div class="col-lg-4 col-md-5 col-xs-12 site-credits">
 
-						<span>&copy; <?php echo date("Y") ?> Wilson College Nature Club. <a href="<?php bloginfo(url); ?>/colophon">Site Credits</a></span>
+					<span>&copy; <?php echo date("Y") ?> Wilson College Nature Club. <a href="<?php bloginfo('url'); ?>/colophon">Site Credits</a></span>
 
 				</div>
 

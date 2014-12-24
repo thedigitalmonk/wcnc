@@ -30,7 +30,7 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                MENU
             </button>
-            <a class="navbar-brand" href="<?php bloginfo(url); ?>">WCNC.in</a>
+            <a class="navbar-brand" href="<?php bloginfo('url'); ?>">WCNC.in</a>
         </div>
 
             <?php 
