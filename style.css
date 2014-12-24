@@ -9907,17 +9907,16 @@ object {
   /* line 329, wcsass/_responsive.scss */
   .magazine-block .info {
     width: 100%;
-    padding-top: 10px;
-    padding-left: 0;
+    padding: 10px;
   }
 }
 @media (max-width: 360px) {
-  /* line 340, wcsass/_responsive.scss */
+  /* line 339, wcsass/_responsive.scss */
   #primary {
     padding: 20px 10px;
   }
 
-  /* line 344, wcsass/_responsive.scss */
+  /* line 343, wcsass/_responsive.scss */
   .navbar-default .navbar-brand {
     font-weight: 700;
     font-size: 28px;
@@ -9925,11 +9924,11 @@ object {
     background: none;
   }
 
-  /* line 353, wcsass/_responsive.scss */
+  /* line 352, wcsass/_responsive.scss */
   .single-post #primary header {
     padding: 0 20px;
   }
-  /* line 357, wcsass/_responsive.scss */
+  /* line 356, wcsass/_responsive.scss */
   .single-post #primary .entry-content, .single-post #primary .entry-footer, .single-post #primary .post-navigation, .single-post #primary #disqus_thread {
     padding: 0 20px;
   }
